@@ -39,7 +39,7 @@
 /* Ersetze beide Platzhalter durch deine Project URL und deinen Publishable Key.
    NIEMALS einen secret- oder service_role-Schlüssel eintragen. */
 const SUPABASE_URL="HIER_PROJECT_URL_EINTRAGEN";
-const SUPABASE_PUBLISHABLE_KEY="HIER_PUBLISHABLE_KEY_EINTRAGEN";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_GRx2I-3B6BMQLWXvLq57oQ_xldPhBEP";
 const configured=SUPABASE_URL.startsWith("https://")&&!SUPABASE_URL.includes("HIER_")&&!SUPABASE_PUBLISHABLE_KEY.includes("HIER_");
 const sb=configured?window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY):null;
 const $=id=>document.getElementById(id);let levels=[],activeIndex=0,map=[],original=[],player={x:1,y:1},moves=0,won=false,admin=false,editId=null,editMap=[],editW=8,editH=8;
