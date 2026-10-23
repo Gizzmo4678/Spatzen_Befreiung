@@ -11,7 +11,7 @@
 <aside class="panel"><h2>Spielregeln</h2><p>Du steuerst das Männchen. Spatzen lassen sich schieben, aber nicht ziehen. Wände und andere Spatzen blockieren den Weg. Alle Spatzen müssen auf Fensterfelder gelangen.</p><p class="muted">Ein Gemeinschaftsspiel für „Leben in Ulm und Neu-Ulm“.</p></aside></main><footer>Gemeinsam mehr erleben · Ulmer Spatzenbefreiung</footer>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script>
 /* Ersetze diese beiden Platzhalter durch die Werte aus deiner bisherigen index.html. Nur Publishable/anon-Key, niemals secret/service_role! */
-const SUPABASE_URL="https://mgfvfbncvyoznprwvobm.supabase.co/rest/v1/",SUPABASE_PUBLISHABLE_KEY="sb_publishable_GRx2I-3B6BMQLWXvLq57oQ_xldPhBEP",BUCKET="game-assets";
+const SUPABASE_URL="https://mgfvfbncvyoznprwvobm.supabase.co",SUPABASE_PUBLISHABLE_KEY="sb_publishable_GRx2I-3B6BMQLWXvLq57oQ_xldPhBEP",BUCKET="game-assets";
 const configured=SUPABASE_URL.startsWith("https://")&&!SUPABASE_URL.includes("HIER_")&&!SUPABASE_PUBLISHABLE_KEY.includes("HIER_"),sb=configured?supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY):null,$=id=>document.getElementById(id);
 let levels=[],active=0,map=[],startMap=[],moves=0,history=[],player={x:1,y:1},won=false,admin=false,editId=null,editMap=[],w=8,h=8,tool="wall",backgroundUrl="";
 const samples=[{title:"Erstes Piepsen",level_data:{map:["########","#      #","# .    #","# $    #","#  @   #","#      #","########"]},published:true},{title:"Am Fenster",level_data:{map:["########","#      #","#  .   #","#  $   #","#  @   #","#      #","########"]},published:true},{title:"Kistenweg",level_data:{map:["########","#      #","# ..   #","# $$   #","#  @   #","#      #","########"]},published:true}];
