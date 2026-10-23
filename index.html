@@ -38,8 +38,9 @@
 <script>
 /* Ersetze beide Platzhalter durch deine Project URL und deinen Publishable Key.
    NIEMALS einen secret- oder service_role-Schlüssel eintragen. */
-const SUPABASE_URL="HIER_PROJECT_URL_EINTRAGEN";
-const SUPABASE_PUBLISHABLE_KEY="HIER_PUBLISHABLE_KEY_EINTRAGEN";
+const SUPABASE_URL="https://mgfvfbncvyoznprwvobm.supabase.co/rest/v1/";
+const SUPABASE_PUBLISHABLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1nZnZmYm5jdnlvem5wcnd2b2JtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI3NTM3MDgsImV4cCI6MjEwODMyOTcwOH0.0IlW_Vq0QNrtTKem1U-s3TIDNiBcN60o-3EgugWyns8
+";
 const configured=SUPABASE_URL.startsWith("https://")&&!SUPABASE_URL.includes("HIER_")&&!SUPABASE_PUBLISHABLE_KEY.includes("HIER_");
 const sb=configured?window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY):null;
 const $=id=>document.getElementById(id);let levels=[],activeIndex=0,map=[],original=[],player={x:1,y:1},moves=0,won=false,admin=false,editId=null,editMap=[],editW=8,editH=8;
