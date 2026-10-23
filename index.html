@@ -39,7 +39,7 @@
 /* Ersetze beide Platzhalter durch deine Project URL und deinen Publishable Key.
    NIEMALS einen secret- oder service_role-Schlüssel eintragen. */
 const SUPABASE_URL="https://mgfvfbncvyoznprwvobm.supabase.co/rest/v1/";
-const SUPABASE_PUBLISHABLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1nZnZmYm5jdnlvem5wcnd2b2JtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI3NTM3MDgsImV4cCI6MjEwODMyOTcwOH0.0IlW_Vq0QNrtTKem1U-s3TIDNiBcN60o-3EgugWyns8
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_GRx2I-3B6BMQLWXvLq57oQ_xldPhBEP
 ";
 const configured=SUPABASE_URL.startsWith("https://")&&!SUPABASE_URL.includes("HIER_")&&!SUPABASE_PUBLISHABLE_KEY.includes("HIER_");
 const sb=configured?window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY):null;
